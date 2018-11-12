@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
 
 docker build -t $IMAGE_NAME \
-  --build-arg=SOURCE_BRANCH=$SOURCE_BRANCH \
+  --build-arg source_branch=$SOURCE_BRANCH \
   .

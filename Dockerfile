@@ -2,6 +2,8 @@ FROM jonnyandrew/flutter-base:latest
 
 MAINTAINER jonnyandrew
 
-RUN git -C /flutter checkout $SOURCE_BRANCH
+ARG source_branch
+
+RUN git -C /flutter checkout $source_branch
 
 RUN flutter doctor
